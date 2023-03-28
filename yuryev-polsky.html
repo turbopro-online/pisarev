@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.pagepiling.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: null,
+          direction: "vertical",
+          verticalCentered: true,
+          anchors: [],
+          scrollingSpeed: 700,
+          easing: "swing",
+          loopBottom: false,
+          loopTop: false,
+          css3: true,
+          normalScrollElements: null,
+          normalScrollElementTouchThreshold: 5,
+          touchSensitivity: 5,
+          keyboardScrolling: false,
+          sectionSelector: ".section",
+          animateAnchor: false,
+
+          //events
+          onLeave: function (index, nextIndex, direction) {},
+          afterLoad: function (anchorLink, index) {},
+          afterRender: function () {},
+        });
+      });
+    </script>
+    <title>Юрьев-Польский</title>
+  </head>
+  <body ondragstart="return false" id="destinations">
+    <div id="pagepiling">
+      <div class="section contacts">
+        <div class="wrapper">
+          <h2>Юрьев-Польский</h2>
+          <div class="textblock" id="contacts-area">
+            <p>
+              Юрьев-Польский — небольшой старинный город во Владимирской
+              области, через который проходят маршруты Золотого кольца России.
+              Он стоит в стороне от крупных туристических центров, на берегу
+              реки Колокши. Юрьев-Польский отличается от других древнерусских
+              городов тем, что не обладает природными укреплениями. Вокруг него
+              не существует непроходимых лесов, болот или больших холмов, а
+              Колокша имеет низкие берега.
+            </p>
+            <p>
+              <img src="images/yuryev-polsky.jpg" alt="Юрьев-Польский" />
+            </p>
+            <p>
+              Михайло-Архангельский монастырь располагается в центре
+              Юрьева-Польского в кольце древних земляных валов XII века. Обитель
+              была основана, по не подтверждённому преданию, в XIII веке князем
+              Святославом Всеволодовичем. Как и весь город, монастырь был дотла
+              разорен в годы Смуты и фактически заново заложен в XVII веке.
+            </p>
+            <p>
+              <img src="images/yuryev-monastery.jpg" alt="Монастырь" />
+            </p>
+            <p>
+              Георгиевский собор — один из немногих сохранившихся памятников
+              домонгольской Руси и единственная домонгольская постройка, у
+              которой известно имя зодчего. Храм был построен в 1230-1234 годах
+              святым князем Святославом Всеволодовичем. Причем не в переносном,
+              а прямом смысле слова — князь лично возглавлял все этапы
+              строительства, в том числе был и его архитектором.
+            </p>
+            <p>
+              <img src="images/yuryev-church.jpg" alt="Собор" />
+            </p>
+            <p><a href="destinations.html">Вернуться назад</a></p>
+          </div>
+        </div>
+        <div class="anchor" onclick="location.href='nav.html';">
+          <img src="images/compass.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.pagepiling.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: null,
+          direction: "vertical",
+          verticalCentered: true,
+          anchors: [],
+          scrollingSpeed: 700,
+          easing: "swing",
+          loopBottom: false,
+          loopTop: false,
+          css3: true,
+          normalScrollElements: null,
+          normalScrollElementTouchThreshold: 5,
+          touchSensitivity: 5,
+          keyboardScrolling: false,
+          sectionSelector: ".section",
+          animateAnchor: false,
+
+          //events
+          onLeave: function (index, nextIndex, direction) {},
+          afterLoad: function (anchorLink, index) {},
+          afterRender: function () {},
+        });
+      });
+    </script>
+    <title>Владимир</title>
+  </head>
+  <body ondragstart="return false" id="destinations">
+    <div id="pagepiling">
+      <div class="section contacts">
+        <div class="wrapper">
+          <h2>Владимир</h2>
+          <div class="textblock" id="contacts-area">
+            <p>
+              Город Владимир впервые упоминается в летописи в 1108 году, его
+              основал князь Владимир Мономах. Уже к середине XII века он
+              становится столицей Владимиро-Суздальского княжества и самым
+              влиятельным поселением Северо-Восточной Руси — даже Москва
+              когда-то была лишь одним из его «пригородов». Сегодня Владимир —
+              это один из крупнейших туристических центров европейской части
+              страны.
+            </p>
+            <p>
+              <img src="images/vladimir.jpg" alt="Владимир" />
+            </p>
+            <p>
+              Золотые ворота — редчайший образец древнерусского оборонительного
+              сооружения. Ворота построили как главное боевое и проездное здание
+              городской крепости, которую в середине XII века возвел во
+              Владимире князь Андрей Боголюбский. Золотые ворота представляли
+              собой мощную башню с 14-метровой аркой. Над сводом размещалась
+              боевая площадка, а в верхней части башни — миниатюрный
+              белокаменный Ризоположенский храм.
+            </p>
+            <p>
+              <img src="images/golden-gates.jpg" alt="Золотые Ворота" />
+            </p>
+            <p>
+              Театр во Владимире появился в 1848 году, когда актер Иван Лавров
+              убедил местного губернатора в том, что театр необходим каждому
+              городу. К 30-м годам XX века о владимирских постановках уже писали
+              столичные газеты — спектакли театра имели большой успех.
+            </p>
+            <p>
+              <img src="images/theatre-vladimir.jpg" alt="Театр" />
+            </p>
+            <p>
+              Первое белокаменное здание Успенского собора было возведено в
+              1158–1160 годах по заказу владимирского князя Андрея Боголюбского.
+              В 1185 году оно сильно пострадало от пожара и было существенно
+              перестроено мастерами князя Всеволода III Большое Гнездо. В XV
+              веке здание храма стало образцом для возведения Успенского собора
+              Московского Кремля. В Успенском соборе сохранилась большая
+              композиция «Страшного суда» 1408 года кисти Андрея Рублева и
+              Даниила Черного.
+            </p>
+            <p><img src="images/vladimir-church.jpg" alt="Собор" /></p>
+            <p><a href="destinations.html">Вернуться назад</a></p>
+          </div>
+        </div>
+        <div class="anchor" onclick="location.href='nav.html';">
+          <img src="images/compass.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.pagepiling.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: null,
+          direction: "vertical",
+          verticalCentered: true,
+          anchors: [],
+          scrollingSpeed: 700,
+          easing: "swing",
+          loopBottom: false,
+          loopTop: false,
+          css3: true,
+          normalScrollElements: null,
+          normalScrollElementTouchThreshold: 5,
+          touchSensitivity: 5,
+          keyboardScrolling: false,
+          sectionSelector: ".section",
+          animateAnchor: false,
+
+          //events
+          onLeave: function (index, nextIndex, direction) {},
+          afterLoad: function (anchorLink, index) {},
+          afterRender: function () {},
+        });
+      });
+    </script>
+    <title>Иваново</title>
+  </head>
+  <body ondragstart="return false" id="destinations">
+    <div id="pagepiling">
+      <div class="section contacts">
+        <div class="wrapper">
+          <h2>Иваново</h2>
+          <div class="textblock" id="contacts-area">
+            <p>
+              Иваново — город невест и центр текстильной промышленности. После
+              реконструкции здесь открылся знаменитый Ивановский цирк, что также
+              добавляет городу туристической привлекательности​. Для всех, кто
+              планирует посетить «ситцевый край», реально или виртуально, мы
+              подготовили гид по его важнейшим достопримечательностям.
+            </p>
+            <p>
+              <img src="images/ivanovo.jpg" alt="Иваново" />
+            </p>
+            <p>
+              Конечно, нельзя, будучи в Иваново, не зайти в этот музей. В основу
+              его экспозиции легла уникальная текстильная коллекция,
+              насчитывающая полмиллиона единиц. Музей расположился в родовом
+              доме Дмитрия Бурылина, построенном в начале XX века в стиле
+              модерн. Кроме ивановских ситцев в музее представлена экспозиция
+              «Слава Зайцев. Жизнь = творчество». Кстати сказать, всемирно
+              известный модельер родился в Иваново, здесь же закончил
+              текстильный техникум и начал свой творческий путь.
+            </p>
+            <p>
+              <img src="images/museum-ivanovo.jpg" alt="Музей Ситца" />
+            </p>
+            <p>
+              Как писал Владимир Маяковский в двадцатые годы: <br />«Москва и
+              Иваново… строились наново». Образец советского конструктивизма,
+              этот дом является неотъемлемым символом Иваново. Жилой дом для
+              рабочих архитектор Фридман превратил в плывущее судно. Один из
+              торцов выполнен в форме носа корабля, а на «корме» — смотровая
+              башня.
+            </p>
+            <p>
+              <img src="images/house-ship.jpg" alt="Дом-корабль" />
+            </p>
+            <p>
+              Церковь Введения в Иваново называют также Красной церковью.
+              Комплекс начал строиться в 1900 году на участке, пожертвованном
+              графом Шереметевым, на средства ивановских фабрикантов Бурылиных,
+              Гарелиных, Битовой, Маракушева и др. Комплекс отличается единством
+              архитектуры, выдержанной в русском стиле, с отдельными элементами
+              модерна. Крупнейший ансамбль нач. 20 в. играющий важную
+              градостроительную роль.
+            </p>
+            <p><img src="images/ivanovo-church.jpg" alt="Музей" /></p>
+            <p><a href="destinations.html">Вернуться назад</a></p>
+          </div>
+        </div>
+        <div class="anchor" onclick="location.href='nav.html';">
+          <img src="images/compass.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.pagepiling.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: null,
+          direction: "vertical",
+          verticalCentered: true,
+          anchors: [],
+          scrollingSpeed: 700,
+          easing: "swing",
+          loopBottom: false,
+          loopTop: false,
+          css3: true,
+          normalScrollElements: null,
+          normalScrollElementTouchThreshold: 5,
+          touchSensitivity: 5,
+          keyboardScrolling: false,
+          sectionSelector: ".section",
+          animateAnchor: false,
+
+          //events
+          onLeave: function (index, nextIndex, direction) {},
+          afterLoad: function (anchorLink, index) {},
+          afterRender: function () {},
+        });
+      });
+    </script>
+    <title>Тутаев</title>
+  </head>
+  <body ondragstart="return false" id="destinations">
+    <div id="pagepiling">
+      <div class="section contacts">
+        <div class="wrapper">
+          <h2>Тутаев</h2>
+          <div class="textblock" id="contacts-area">
+            <p>
+              Тутаев – это небольшой провинциальный город, который находится на
+              территории Ярославской области. Населенный пункт славится обилием
+              старинных храмов, красотой ландшафтов и музеями. Тутаев вырос из
+              двух поселений – Романова и Борисоглебска. В 1822 году их
+              объединили в один город, а в начале XX века его переименовали в
+              честь героя-красноармейца.
+            </p>
+            <p><img src="images/tutaev.jpg" alt="Тутаев" /></p>
+            <p>
+              Воскресенский собор громаден сам по себе, он обнесен каменной
+              стеной с красивыми воротами, а рядом стоит чуть накренившаяся,
+              украшенная каменными узорами, колокольня. На месте собора, с
+              начала 16-го века стояла деревянная, с пятью куполами, церковь
+              Бориса и Глеба, давшая название всей слободе. В 1652 году ее
+              заменили на каменную шатровую церковь с трапезной и двумя
+              приделами того же имени. Сюда постоянно приезжают российские
+              космонавты. Здесь они венчаются и принимают крещение.
+            </p>
+            <p>
+              <img src="images/tutaev-church.jpg" alt="Собор" />
+            </p>
+            <p>
+              Как только вы очутились на левом берегу, вас тут же встречает у
+              подножия Волги красивейшая Церковь Казанской иконы Божией Матери и
+              Спаса Преображения. В храме регулярно проводятся службы
+              священниками Тутаевского благочинного округа, а также ежегодные
+              крестные ходы с чудотворным списком Казанской-Ярославской иконы
+              Божией Матери. Востанавливается храм давно и весьма успешно.
+            </p>
+            <p>
+              <img src="images/tutaev-church2.jpg" alt="Церковь" />
+            </p>
+            <p><a href="destinations.html">Вернуться назад</a></p>
+          </div>
+        </div>
+        <div class="anchor" onclick="location.href='nav.html';">
+          <img src="images/compass.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

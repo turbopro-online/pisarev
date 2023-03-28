@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.pagepiling.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: null,
+          direction: "vertical",
+          verticalCentered: true,
+          anchors: [],
+          scrollingSpeed: 700,
+          easing: "swing",
+          loopBottom: false,
+          loopTop: false,
+          css3: true,
+          normalScrollElements: null,
+          normalScrollElementTouchThreshold: 5,
+          touchSensitivity: 5,
+          keyboardScrolling: false,
+          sectionSelector: ".section",
+          animateAnchor: false,
+
+          //events
+          onLeave: function (index, nextIndex, direction) {},
+          afterLoad: function (anchorLink, index) {},
+          afterRender: function () {},
+        });
+      });
+    </script>
+    <title>Александров</title>
+  </head>
+  <body ondragstart="return false" id="destinations">
+    <div id="pagepiling">
+      <div class="section contacts">
+        <div class="wrapper">
+          <h2>Александров</h2>
+          <div class="textblock" id="contacts-area">
+            <p>
+              Александров — древний город на северо-западе Владимирской области,
+              известный как резиденция Ивана Грозного, Александрова слобода, в
+              которой сохранились интересные памятники XVI—XVII веков и
+              творились важные события российской истории. Город находится на
+              обоих берегах реки Серая, левого притока Шерны, которая, в свою
+              очередь, впадает в Клязьму.
+            </p>
+            <p>
+              <img src="images/aleksandrov.jpg" alt="Александров" />
+            </p>
+            <p>
+              Прославило Александровскую слободу время Ивана Грозного. Начиная с
+              1565 года царь сделал слободу фактическим центром Русского
+              государства более чем на 20 лет. Здесь расположилась основная
+              царская резиденция, были построены грандиозные каменные храмы и
+              палаты (деревянные и каменные), а вся территория нового царского
+              двора была обнесена земляным валом с деревянным тыном.
+            </p>
+            <p>
+              <img src="images/aleksandrov-sloboda.jpg" alt="Слобода" />
+            </p>
+            <p>
+              Церковь Боголюбской иконы Божией Матери — православный храм в
+              Александрове Владимирской области. Приход храма входит в состав
+              Александровского благочиния Александровской епархии. Церковь
+              построена в 1800 году. Храм выдержан в стиле классицизма. Храм
+              построен в честь Боголюбской иконы Божией Матери, возведение храма
+              на данном месте было обусловлено тем, что в городе появилось новое
+              кладбище. Вскоре храм был обнесён каменной оградой, была построена
+              каменная колокольня.
+            </p>
+            <p>
+              <img src="images/alexandrov-church.jpg" alt="Церковь" />
+            </p>
+            <p><a href="destinations.html">Вернуться назад</a></p>
+          </div>
+        </div>
+        <div class="anchor" onclick="location.href='nav.html';">
+          <img src="images/compass.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

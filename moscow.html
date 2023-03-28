@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.pagepiling.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: null,
+          direction: "vertical",
+          verticalCentered: true,
+          anchors: [],
+          scrollingSpeed: 700,
+          easing: "swing",
+          loopBottom: false,
+          loopTop: false,
+          css3: true,
+          normalScrollElements: null,
+          normalScrollElementTouchThreshold: 5,
+          touchSensitivity: 5,
+          keyboardScrolling: false,
+          sectionSelector: ".section",
+          animateAnchor: false,
+
+          //events
+          onLeave: function (index, nextIndex, direction) {},
+          afterLoad: function (anchorLink, index) {},
+          afterRender: function () {},
+        });
+      });
+    </script>
+    <title>Москва</title>
+  </head>
+  <body ondragstart="return false" id="destinations">
+    <div id="pagepiling">
+      <div class="section contacts">
+        <div class="wrapper">
+          <h2>Москва</h2>
+          <div class="textblock" id="contacts-area">
+            <p>
+              Москва, пожалуй, один из городов, не нуждающихся в представлении.
+              В Москве множество парков и театров, старинных соборов и усадеб, а
+              собрания музеев соперничают с мировыми хранилищами. Москва сегодня
+              — крупнейший по численности населения город Европы с населением
+              более 12 млн человек, крупнейший русскоязычный город в мире и
+              лучший мегаполис мира по качеству жизни и развитию инфраструктуры.
+            </p>
+            <p>
+              <img src="images/moscow.jpg" alt="Москва" />
+            </p>
+            <p>
+              Красная площадь – основной символ и наиболее известное
+              историческое место Москвы. Сама площадь и расположенные на ней
+              архитектурные сооружения внесены в список объектов Всемирного
+              наследия ЮНЕСКО. Это историческое место, обязательное для
+              посещения иностранцами. Москвичи также считают Красную площадь
+              "сердцем столицы" и с удовольствием встречают здесь Новый год,
+              приходят на парад 9 Мая или вальяжно прогуливаются по брусчатке в
+              солнечные выходные.
+            </p>
+            <p>
+              <img src="images/red-square.jpg" alt="Красная площадь" />
+            </p>
+            <p>
+              Современное здание воспроизводит внешний облик одноименного храма,
+              возведенного в честь подвига российского народа в Отечественной
+              войне 1812 года, освященного в 1883 году и разрушенного в 1931
+              году. Идея постройки храма возникла зимой 1812 года на одном из
+              заседаний под председательством Гавриила Державина. Предложение
+              было передано царю Александру I, и уже через несколько дней, в
+              Рождество 1812-го, появился манифест за подписью государя о
+              строительстве храма
+            </p>
+            <p>
+              <img src="images/moscow-church.jpg" alt="Храм Христа Спасителя" />
+            </p>
+            <p>
+              Государственная Третьяковская галерея — один из крупнейших
+              художественных музеев мира. Московский купец Павел Третьяков в
+              1851 году купил здание в Лаврушинском переулке, в через пять лет
+              основал в нем музей русской художественной школы. Первыми работами
+              в коллекции стали «Искушение» Николая Шильдера и «Стычка с
+              финляндскими контрабандистами» Василия Худякова.
+            </p>
+            <p>
+              <img
+                src="images/moscow-gallery.jpg"
+                alt="Третьяковская галерея"
+              />
+            </p>
+            <p>
+              Москва-Сити — это Москва будущего, строящийся международный
+              деловой квартал из ультрасовременных небоскрёбов. Уникальная для
+              России и Восточной Европы зона деловой активности объединяет в
+              себе апартаменты для жилья, офисные здания, многочисленные
+              площадки для торговли и отдыха. Москвичей и гостей города
+              Москва-Сити привлекает необычной конфигурацией сооружений,
+              развитой социально-культурной инфраструктурой.
+            </p>
+            <p><img src="images/moscow-city.jpg" alt="Москва-Сити" /></p>
+            <p><a href="destinations.html">Вернуться назад</a></p>
+          </div>
+        </div>
+        <div class="anchor" onclick="location.href='nav.html';">
+          <img src="images/compass.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

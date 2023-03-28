@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.pagepiling.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: null,
+          direction: "vertical",
+          verticalCentered: true,
+          anchors: [],
+          scrollingSpeed: 700,
+          easing: "swing",
+          loopBottom: false,
+          loopTop: false,
+          css3: true,
+          normalScrollElements: null,
+          normalScrollElementTouchThreshold: 5,
+          touchSensitivity: 5,
+          keyboardScrolling: false,
+          sectionSelector: ".section",
+          animateAnchor: false,
+
+          //events
+          onLeave: function (index, nextIndex, direction) {},
+          afterLoad: function (anchorLink, index) {},
+          afterRender: function () {},
+        });
+      });
+    </script>
+    <title>Углич</title>
+  </head>
+  <body ondragstart="return false" id="destinations">
+    <div id="pagepiling">
+      <div class="section contacts">
+        <div class="wrapper">
+          <h2>Углич</h2>
+          <div class="textblock" id="contacts-area">
+            <p>
+              Углич — один из древнейших русских городов. В 937 году его основал
+              Ян Плескович, родственник княгини Ольги. В городе сохранились
+              старинные монастыри и храмы, княжеские палаты и купеческие дома
+              XVIII–XIX веков. В местных музеях можно увидеть коллекции
+              древнерусской живописи, деревянной скульптуры, резной мебели и
+              ценной посуды прошлых веков. Именно здесь 15 мая 1591 года был
+              убит царевич Дмитрий – младший сын Ивана Грозного и последний
+              потомок династии Рюриковичей.
+            </p>
+            <p>
+              <img src="images/uglich.jpg" alt="Углич" />
+            </p>
+            <p>
+              Угличский кремль, расположенный на высоком берегу Волги, — это
+              Княжеские палаты, церковь Царевича Димитрия на Крови,
+              Спасо-Преображенский собор, колокольня Спасо-Преображенского
+              собора, Богоявленский зимний собор и здание Городской думы (Дом
+              градоначальника). Уникальность композиции в том, что она
+              представляет разные эпохи русской истории и культуры, объединенные
+              общей биографией, легендами и загадками. Попадая сюда, мы словно
+              путешествуем во времени.
+            </p>
+            <p>
+              <img src="images/kremlin-uglich.jpg" alt="Угличский кремль" />
+            </p>
+            <p>
+              Аналогов российского интерактивного Музея гидроэнергетики,
+              расположенного в Угличе, в мире нет. Он разместился в здании
+              управления Волжского исправительно-трудового лагеря, которое
+              сегодня является памятником. 11 залов его экспозиции рассказывают
+              о развитии гидроэнергетики. Экспозиция рассказывает о развитии
+              гидроэнергетики в СССР и России, об ученых, трудившихся в этой
+              сфере, и их изобретениях, об истории старейших российских ГЭС.
+            </p>
+            <p>
+              <img src="images/museum-uglich.jpg" alt="Музей гидроэнергетики" />
+            </p>
+            <p>
+              Старинный дом Василия Калашникова находится в исторической части
+              Углича. Сегодня в здании XVIII века располагаются три экспозиции —
+              Музей стекла, чайная с русской печью и самоварами и кабинет
+              конструктора, который рассказывает о его жизни и изобретениях.
+              Калашников проектировал наливные баржи для перевозки керосина,
+              конструировал воздуходувы и пароперегреватели — устройства для
+              паровой машины.
+            </p>
+            <p>
+              <img src="images/kalashnikov.jpg" alt="Дом Калашникова" />
+            </p>
+            <p><a href="destinations.html">Вернуться назад</a></p>
+          </div>
+        </div>
+        <div class="anchor" onclick="location.href='nav.html';">
+          <img src="images/compass.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

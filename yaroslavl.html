@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.pagepiling.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: null,
+          direction: "vertical",
+          verticalCentered: true,
+          anchors: [],
+          scrollingSpeed: 700,
+          easing: "swing",
+          loopBottom: false,
+          loopTop: false,
+          css3: true,
+          normalScrollElements: null,
+          normalScrollElementTouchThreshold: 5,
+          touchSensitivity: 5,
+          keyboardScrolling: false,
+          sectionSelector: ".section",
+          animateAnchor: false,
+
+          //events
+          onLeave: function (index, nextIndex, direction) {},
+          afterLoad: function (anchorLink, index) {},
+          afterRender: function () {},
+        });
+      });
+    </script>
+    <title>Ярославль</title>
+  </head>
+  <body ondragstart="return false" id="destinations">
+    <div id="pagepiling">
+      <div class="section contacts">
+        <div class="wrapper">
+          <h2>Ярославль</h2>
+          <div class="textblock" id="contacts-area">
+            <p>
+              Ярославль — первый русский город на Волге, который упоминается в
+              летописях. Повесть временных лет свидетельствует о существовании
+              Ярославля уже в 1071 году. Начало Ярославлю дало финно-угорское
+              поселение Медвежий Угол. Рядом с ним стояла небольшая крепость,
+              вокруг которой и начали строить город. Исторический центр
+              Ярославля — это 140 архитектурных памятников, которые охраняются
+              государством. Предлагаем вам прогуляться по его историческим
+              улицам, архитектурным памятникам и музеям.
+            </p>
+            <p>
+              <img src="images/yaroslavl.jpg" alt="Ярославль" />
+            </p>
+            <p>
+              В 1750 году в каменном амбаре Федор Волков с друзьями и братьями
+              поставил свой первый спектакль, и Ярославль стал родиной русского
+              публичного театра. Через полгода на берегу Волги открылось
+              специальное здание — «театральная хоромина». Для представлений
+              начали изготавливать костюмы и декорации, вскоре сложился
+              постоянный репертуар. Императрица Елизавета Петровна специальным
+              указом вызвала Федора Волкова в Санкт-Петербург для организации
+              театра в столице.
+            </p>
+            <p>
+              <img src="images/theatre-yaroslavl.jpg" alt="Театр" />
+            </p>
+            <p>
+              В усадьбе купца Кузнецова, построенной в конце XIX века,
+              расположен музей истории города. Здесь работают две основные
+              экспозиции: «Десять веков в истории Ярославля» и «Из истории
+              ярославской медицины». В коллекции хранятся старинные иконы,
+              оружие XIII–XVIII веков, монеты, предметы утвари, фотографии,
+              макеты городских храмов. История медицины и аптечного дела
+              представлена фрагментом интерьера избы знахаря, кабинетами врачей
+              XIX–XX веков.
+            </p>
+            <p><img src="images/museum-yaroslavl.jpg" alt="Музей" /></p>
+            <p>
+              Крупнейший региональный музей искусств основан в 1919 году по
+              инициативе местных художников и любителей старины. В коллекции
+              музея — уникальное собрание икон (среди них — «Спас Вседержитель»
+              XIII века), собрание полупримитивистского «мещанского портрета»
+              XVIII–XIX веков, произведения русских авангардистов. В экспозиции
+              есть полотна Василия Перова, Карла Брюллова, Ивана Крамского, Ильи
+              Репина, Ивана Айвазовского. Дополняют коллекцию керамика,
+              гобелены, монеты и скульптуры — всего более 70 тысяч экспонатов.
+            </p>
+            <p>
+              <img
+                src="images/art-museum-yaroslavl.jpg"
+                alt="Художественный музей"
+              />
+            </p>
+            <p><a href="destinations.html">Вернуться назад</a></p>
+          </div>
+        </div>
+        <div class="anchor" onclick="location.href='nav.html';">
+          <img src="images/compass.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

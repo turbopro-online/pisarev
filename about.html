@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.pagepiling.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: null,
+          direction: "vertical",
+          verticalCentered: true,
+          anchors: [],
+          scrollingSpeed: 700,
+          easing: "swing",
+          loopBottom: false,
+          loopTop: false,
+          css3: true,
+          normalScrollElements: null,
+          normalScrollElementTouchThreshold: 5,
+          touchSensitivity: 5,
+          keyboardScrolling: false,
+          sectionSelector: ".section",
+          animateAnchor: false,
+
+          //events
+          onLeave: function (index, nextIndex, direction) {},
+          afterLoad: function (anchorLink, index) {},
+          afterRender: function () {},
+        });
+      });
+    </script>
+    <title>О сайте</title>
+  </head>
+  <body id="about" ondragstart="return false">
+    <div id="pagepiling">
+      <div class="section about">
+        <div class="wrapper">
+          <h2>О сайте</h2>
+          <div class="textblock">
+            <p>
+              Данный сайт позволяет получить много новой и полезной информации
+              для всех заинтересованных. Возможности сайта позволяют в полной
+              мере ознакомиться с фотоснимками достопримечательностей, узнать
+              много нового о маршруте в целом и его истории.
+              <br />
+              Он насыщен полезной информацией и имеет удобную встроенную карту
+              для навигации по маршруту Золотого кольца.
+            </p>
+            <p>
+              <img src="images/map-big.png" alt="Маршрут большая картинка" />
+            </p>
+          </div>
+        </div>
+        <div class="anchor" onclick="location.href='nav.html';">
+          <img src="images/compass.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

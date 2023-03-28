@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.pagepiling.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: null,
+          direction: "vertical",
+          verticalCentered: true,
+          anchors: [],
+          scrollingSpeed: 700,
+          easing: "swing",
+          loopBottom: false,
+          loopTop: false,
+          css3: true,
+          normalScrollElements: null,
+          normalScrollElementTouchThreshold: 5,
+          touchSensitivity: 5,
+          keyboardScrolling: false,
+          sectionSelector: ".section",
+          animateAnchor: false,
+
+          //events
+          onLeave: function (index, nextIndex, direction) {},
+          afterLoad: function (anchorLink, index) {},
+          afterRender: function () {},
+        });
+      });
+    </script>
+    <title>Переяславль-Залесский</title>
+  </head>
+  <body ondragstart="return false" id="destinations">
+    <div id="pagepiling">
+      <div class="section contacts">
+        <div class="wrapper">
+          <h2>Переяславль-Залесский</h2>
+          <div class="textblock" id="contacts-area">
+            <p>
+              Переславль-Залесский как будущую столицу Северо-Восточной Руси в
+              середине XII века основал князь Юрий Долгорукий. На болотистой
+              равнине он заложил огромный по тем временам город, больше которого
+              были только Киев и Смоленск. Переславль-Залесский входит в
+              туристический маршрут Золотого кольца России: здесь находятся
+              несколько древних монастырей и церквей, подлинные ритуальные
+              объекты языческой Руси и другие исторические памятники.
+            </p>
+            <p>
+              <img src="images/pereyaslavl.jpg" alt="Переславль-Залесский" />
+            </p>
+            <p>
+              Спасо-Преображенский собор — единственный из белокаменных храмов
+              Северо-Восточной Руси, дошедший до нас практически в полной
+              сохранности. Собор заложил князь Юрий Долгорукий в 1152 году, а
+              завершил строительство его сын — князь Андрей Боголюбский. Здесь в
+              XIII веке крестили Александра Невского, сюда приезжали Даниил
+              Московский, Иван III и Иван Грозный. После того как здание собора
+              сильно пострадало от золотоордынского штурма, собор был
+              восстановлен и заново освящен.
+            </p>
+            <p>
+              <img src="images/spas-sobor.jpg" alt="Собор" />
+            </p>
+            <p>
+              В начале XVI века монастырь основал духовник великого князя
+              Василия III инок Даниил. К 1530-м годам в честь рождения
+              княжеского наследника — будущего царя Ивана Грозного — в монастыре
+              возвели Троицкий собор. Даниил стал крестным отцом Ивана
+              Васильевича. Внутри собор украшен фресками известного мастера
+              Гурия Никитина. На сегодняшний день Троицкий собор — второй по
+              древности храм в Переславле-Залесском после Спасо-Преображенского
+              собора.
+            </p>
+            <p><img src="images/danilov-monastery.jpg" alt="Монастырь" /></p>
+            <p>
+              На берегу Плещеева озера расположен легендарный Синий камень —
+              часть древнего языческого святилища. Это подлинный ритуальный
+              объект, сохранившийся до наших дней со времен языческой Руси.
+              После дождя цвет камня меняется от серого к синему — благодаря
+              этому явлению камень получил свое название. Еще несколько десятков
+              лет назад высота Синь-камня достигала человеческого роста, теперь
+              камень уходит под землю — сегодня его высота около полуметра.
+              Современные туристы загадывают здесь желания — поверхность Синего
+              камня покрыта монетами и цветами.
+            </p>
+            <p>
+              <img src="images/sin-rock.jpg" alt="Синь-камень" />
+            </p>
+            <p><a href="destinations.html">Вернуться назад</a></p>
+          </div>
+        </div>
+        <div class="anchor" onclick="location.href='nav.html';">
+          <img src="images/compass.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<script src="js/jquery-3.6.0.js"></script>
+	<script src="js/jquery.pagepiling.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() 
+		{
+			var interval;
+			var timeout;
+			var autoPlayDuration = 5000;
+			$('#pagepiling').pagepiling(
+			{
+			menu: null,
+			direction: 'vertical',
+			verticalCentered: true,
+			sectionsColor: [],
+			anchors: [],
+			scrollingSpeed: 700,
+			easing: 'swing',
+			loopBottom: true,
+			loopTop: true,
+			css3: true,
+			navigation: 
+				{
+				'textColor': '#fff',
+				'bulletsColor': '#fff',
+				'position': 'right',
+				'tooltips': ['Золотое кольцо России', 'Информация', 'Факты', 'Навигация по сайту']
+				},
+			normalScrollElements: null,
+			normalScrollElementTouchThreshold: 5,
+			touchSensitivity: 5,
+			keyboardScrolling: true,
+			sectionSelector: '.section',
+			animateAnchor: false,
+		
+			//Таймер обратного отсчёта
+			onLeave: function(index, nextIndex, direction){},
+			afterLoad: function(anchorLink, index){
+				clearInterval(interval);
+        clearTimeout(timeout);
+        timeout = setTimeout(function () {
+            interval = getInterval();
+        },
+				autoPlayDuration);},
+			afterRender: function(){
+				interval = getInterval();
+			},
+			});
+			function getInterval() {
+    	return setInterval(function () {
+        $.fn.pagepiling.moveSectionDown();
+    }, autoPlayDuration);
+} 
+	//Запрет на пролистывание при наведении на блок .wrapper, обнуление таймера обратного отсчёта
+	$('.wrapper').on('mouseover', function() {
+		$.fn.pagepiling.setAllowScrolling(false);
+		clearInterval(interval);
+    clearTimeout(timeout);
+	});
+	$('.wrapper').on('mouseout', function() {
+		$.fn.pagepiling.setAllowScrolling(true);
+	});
+});
+
+	</script>
+	<title>Золотое кольцо России</title>
+</head>
+<body ondragstart="return false">
+
+	<div id="pagepiling">
+		<div class="section sec1"><h2>Золотое кольцо России</h2></div>
+		<div class="section sec2">
+			<div class="wrapper">
+				<h2>Информация</h2>
+				<div class="textblock">
+					<p>Золотое кольцо России — туристический маршрут, проходящий по древним городам Северо-Восточной Руси, 
+						в которых сохранились уникальные памятники истории и культуры России, центрам народных ремёсел.
+						В Золотое кольцо входят восемь основных городов — <a href="sergiev-posad.html">Сергиев Посад</a>, <a href="pereyaslavl.html">Переславль-Залесский</a>, <a href="rostov.html">Ростов Великий</a>, 
+						<a href="yaroslavl.html">Ярославль</a>, <a href="kostroma.html">Кострома</a>, <a href="ivanovo.html">Иваново</a>, <a href="suzdal.html">Суздаль</a> и <a href="vladimir.html">Владимир</a>. 
+						<br>
+						Тем не менее, многие туристические агенства часто включают в маршрут до 26 точек на карте.
+					</p>
+					<p><img src="images/map.png" alt="Маршрут"></p>
+					<p>
+					Термин «Золотое Кольцо» ввел в обиход русский журналист Юрий Бычков в 1967 г. Он писал очерки о культурном наследии в газете «Советская Россия».
+					В каждом из 8 городов туристического маршрута происходили важные судьбоносные события, сформировавшие историю Руси. Знаменитые достопримечательности возникали с XII века. 
+					В XVII-XVIII веках большое влияние на искусство оказали реформы Екатерины Великой. 
+					В это время происходил культурный обмен между Россией и Европой, главным образом это коснулось архитектуры. К сожалению, не все постройки сохранились до наших времен.
+					Справа вы можете лицезреть город Владимир в 1911 году на фотографии Сергея Михайловича Прокудина-Горского.
+					</p>
+					<p><img src="images/Vladimir1911.jpg" alt="г. Владимир, 1911 год"></p>
+					<p>
+						Сам Юрий Бычков писал: «Впав в задумчивость, бродил по Москве. Погода стояла контрастная пяти солнечным дням недавнего путешествия — небо заволокло серой пеленой. 
+						Поднял глаза ввысь, и взгляд мой встретил тающий в призрачной вышине, золотящийся сквозь завесу мороси медленно опускающейся с небес дождевой пыли купол колокольни Ивана Великого. 
+						Как током ударило: "Золотое!" Тотчас связалось это "золотое" с дорогой. Выходило — "Золотое кольцо"»
+					</p>
+					<p><img src="images/view.jpg" alt="Красота!"></p>
+					<br>
+				</div>
+			</div>
+		</div>
+		<div class="section sec3">
+			<div class="wrapper">
+				<h2>Факты</h2>
+				<div class="textblock-wide">
+				<ul>
+					<li><span>Нулевой километр маршрута размещен в Ярославле</span></li>
+					<li><span>В Суздале почти всё население работает в сфере туризма</span></li>
+					<li><span>Все города Золотого кольца объединены в особый союз</span></li>
+					<li><span>Самым древним городом Золотого Кольца является Ростов</span></li>
+					<li><span>Крупнейший город Золотого кольца России – Ярославль</span></li>
+					<li><span>Самый молодой город Золотого Кольца России – Иваново</span></li>
+					<li><span>Среди туристов маршрута преобладают граждане Китая</span></li>
+					<li><span>Суздаль – самый маленький город Золотого кольца</span></li>
+					<li><span>Ярославль – древнейший из всех городов на Волге</span></li>
+				</ul>
+				</p>
+				</div>
+			</div>
+		</div>
+		<div class="section sec4">
+			<div class="wrapper">
+				<h2>Навигация по сайту</h2>
+				<div class="textblock-wide">
+					<p>Для быстрой и удобной навигации по сайту вы можете перейти<br>на специально предназначенную для этого страницу:</p>
+					<div id="navlink"><a href="nav.html">Перейти</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>

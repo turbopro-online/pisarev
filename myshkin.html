@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.pagepiling.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: null,
+          direction: "vertical",
+          verticalCentered: true,
+          anchors: [],
+          scrollingSpeed: 700,
+          easing: "swing",
+          loopBottom: false,
+          loopTop: false,
+          css3: true,
+          normalScrollElements: null,
+          normalScrollElementTouchThreshold: 5,
+          touchSensitivity: 5,
+          keyboardScrolling: false,
+          sectionSelector: ".section",
+          animateAnchor: false,
+
+          //events
+          onLeave: function (index, nextIndex, direction) {},
+          afterLoad: function (anchorLink, index) {},
+          afterRender: function () {},
+        });
+      });
+    </script>
+    <title>Мышкин</title>
+  </head>
+  <body ondragstart="return false" id="destinations">
+    <div id="pagepiling">
+      <div class="section contacts">
+        <div class="wrapper">
+          <h2>Мышкин</h2>
+          <div class="textblock" id="contacts-area">
+            <p>
+              Мышкин – уникальный небольшой русский город, который сохранил
+              старинные купеческие постройки и размеренный уклад жизни
+              российской провинции. Одним из несомненных достояний Мышкина
+              является его неизменный старинный облик и уникальные природные
+              ландшафты. Примечательно, что Мышкин расположен на левом, высоком
+              берегу Волги на 6 холмах в окружении густых лесов и сосновых
+              заповедных боров, на западе Ярославской области.
+            </p>
+            <p><img src="images/myshkin.jpg" alt="Мышкин" /></p>
+            <p>
+              Музей мыши — единственный в мире музей, посвященный мышам. Он стал
+              одним из символов небольшого города Мышкина. Музей разместился в
+              одноэтажном бревенчатом деревянном доме, на уступе Никольской
+              горы. Неподалеку от здания музея расположен «Дворец мыши» или
+              «Мышкины палаты». Выставленные коллекции занимают четыре зала, и
+              здесь можно увидеть множество фигурок мышей, выполненных из разных
+              материалов.
+            </p>
+            <p>
+              <img src="images/museum-myshkin.jpg" alt="Музей мыши" />
+            </p>
+            <p>
+              Собор Успения Пресвятой Богородицы — один из старейших соборов
+              города Мышкина. После присвоения Мышкину статуса города в 1777
+              году был разработан новый план его застройки. Согласно этому
+              плану, собор Успения Пресвятой Богородицы должен был возвышаться
+              над остальными зданиями города. Грандиозный для уездного города
+              проект разработал итальянский архитектор Иоганнес Манфрини. Его
+              заложили в 1805 году на пологом холме, в центре большой торговой
+              площади.
+            </p>
+            <p>
+              <img src="images/myshkin-church.jpg" alt="Успенский Собор" />
+            </p>
+            <p><a href="destinations.html">Вернуться назад</a></p>
+          </div>
+        </div>
+        <div class="anchor" onclick="location.href='nav.html';">
+          <img src="images/compass.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.pagepiling.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: null,
+          direction: "vertical",
+          verticalCentered: true,
+          anchors: [],
+          scrollingSpeed: 700,
+          easing: "swing",
+          loopBottom: false,
+          loopTop: false,
+          css3: true,
+          normalScrollElements: null,
+          normalScrollElementTouchThreshold: 5,
+          touchSensitivity: 5,
+          keyboardScrolling: false,
+          sectionSelector: ".section",
+          animateAnchor: false,
+
+          //events
+          onLeave: function (index, nextIndex, direction) {},
+          afterLoad: function (anchorLink, index) {},
+          afterRender: function () {},
+        });
+      });
+    </script>
+    <title>Точки маршрута</title>
+  </head>
+  <body id="destinations" ondragstart="return false">
+    <div id="pagepiling">
+      <div class="section destinations">
+        <div class="wrapper">
+          <h2>Точки маршрута</h2>
+          <div class="textblock-narrow">
+            <div class="card" onclick="location.href='sergiev-posad.html';">
+              <p><img src="images/sergiev-posad.jpg" alt="Сергиев Посад" /></p>
+              <p>Сергиев Посад</p>
+            </div>
+            <div class="card" onclick="location.href='pereyaslavl.html';">
+              <p>
+                <img src="images/pereyaslavl.jpg" alt="Переславль-Залесский" />
+              </p>
+              <p>Переяславль-Залесский</p>
+            </div>
+            <div class="card" onclick="location.href='rostov.html';">
+              <p>
+                <img src="images/rostov.jpg" alt="Ростов Великий" />
+              </p>
+              <p>Ростов Великий</p>
+            </div>
+            <div class="card" onclick="location.href='yaroslavl.html';">
+              <p>
+                <img src="images/yaroslavl.jpg" alt="Ярославль" />
+              </p>
+              <p>Ярославль</p>
+            </div>
+            <div class="card" onclick="location.href='kostroma.html';">
+              <p>
+                <img src="images/kostroma.jpg" alt="Кострома" />
+              </p>
+              <p>Кострома</p>
+            </div>
+            <div class="card" onclick="location.href='ivanovo.html';">
+              <p>
+                <img src="images/ivanovo.jpg" alt="Иваново" />
+              </p>
+              <p>Иваново</p>
+            </div>
+            <div class="card" onclick="location.href='suzdal.html';">
+              <p>
+                <img src="images/suzdal.jpg" alt="Суздаль" />
+              </p>
+              <p>Суздаль</p>
+            </div>
+            <div class="card" onclick="location.href='vladimir.html';">
+              <p>
+                <img src="images/vladimir.jpg" alt="Владимир" />
+              </p>
+              <p>Владимир</p>
+            </div>
+            <div class="card" onclick="location.href='moscow.html';">
+              <p>
+                <img src="images/moscow.jpg" alt="Москва" />
+              </p>
+              <p>Москва</p>
+            </div>
+            <div class="card" onclick="location.href='dmitrov.html';">
+              <p>
+                <img src="images/dmitrov.jpg" alt="Дмитров" />
+              </p>
+              <p>Дмитров</p>
+            </div>
+            <div class="card" onclick="location.href='kalyazin.html';">
+              <p>
+                <img src="images/kalyazin.jpg" alt="Калязин" />
+              </p>
+              <p>Калязин</p>
+            </div>
+            <div class="card" onclick="location.href='uglich.html';">
+              <p>
+                <img src="images/uglich.jpg" alt="Углич" />
+              </p>
+              <p>Углич</p>
+            </div>
+            <div class="card" onclick="location.href='myshkin.html';">
+              <p>
+                <img src="images/myshkin.jpg" alt="Мышкин" />
+              </p>
+              <p>Мышкин</p>
+            </div>
+            <div class="card" onclick="location.href='rybinsk.html';">
+              <p>
+                <img src="images/rybinsk.jpg" alt="Рыбинск" />
+              </p>
+              <p>Рыбинск</p>
+            </div>
+            <div class="card" onclick="location.href='tutaev.html';">
+              <p>
+                <img src="images/tutaev.jpg" alt="Тутаев" />
+              </p>
+              <p>Тутаев</p>
+            </div>
+            <div class="card" onclick="location.href='ples.html';">
+              <p>
+                <img src="images/ples.jpg" alt="Плёс" />
+              </p>
+              <p>Плёс</p>
+            </div>
+            <div class="card" onclick="location.href='kineshma.html';">
+              <p>
+                <img src="images/kineshma.jpg" alt="Кинешма" />
+              </p>
+              <p>Кинешма</p>
+            </div>
+            <div class="card" onclick="location.href='shuya.html';">
+              <p>
+                <img src="images/shuya.jpg" alt="Шуя" />
+              </p>
+              <p>Шуя</p>
+            </div>
+            <div class="card" onclick="location.href='palekh.html';">
+              <p>
+                <img src="images/palekh.jpg" alt="Палех" />
+              </p>
+              <p>Палех</p>
+            </div>
+            <div class="card" onclick="location.href='gorohovets.html';">
+              <p>
+                <img src="images/gorohovets.jpg" alt="Гороховец" />
+              </p>
+              <p>Гороховец</p>
+            </div>
+            <div class="card" onclick="location.href='murom.html';">
+              <p>
+                <img src="images/murom.jpg" alt="Муром" />
+              </p>
+              <p>Муром</p>
+            </div>
+
+            <div class="card" onclick="location.href='kasimov.html';">
+              <p>
+                <img src="images/kasimov.jpg" alt="Касимов" />
+              </p>
+              <p>Касимов</p>
+            </div>
+            <div class="card" onclick="location.href='gus-khrustalny.html';">
+              <p>
+                <img src="images/gus-khrustalny.jpg" alt="Гусь-Хрустальный" />
+              </p>
+              <p>Гусь-Хрустальный</p>
+            </div>
+            <div class="card" onclick="location.href='bogolyubovo.html';">
+              <p>
+                <img src="images/bogolyubovo.jpg" alt="Боголюбово" />
+              </p>
+              <p>Боголюбово</p>
+            </div>
+            <div class="card" onclick="location.href='yuryev-polsky.html';">
+              <p>
+                <img src="images/yuryev-polsky.jpg" alt="Юрьев-Польский" />
+              </p>
+              <p>Юрьев-Польский</p>
+            </div>
+            <div class="card" onclick="location.href='aleksandrov.html';">
+              <p>
+                <img src="images/aleksandrov.jpg" alt="Александров" />
+              </p>
+              <p>Александров</p>
+            </div>
+          </div>
+        </div>
+        <div class="anchor" onclick="location.href='nav.html';">
+          <img src="images/compass.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

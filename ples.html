@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.pagepiling.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: null,
+          direction: "vertical",
+          verticalCentered: true,
+          anchors: [],
+          scrollingSpeed: 700,
+          easing: "swing",
+          loopBottom: false,
+          loopTop: false,
+          css3: true,
+          normalScrollElements: null,
+          normalScrollElementTouchThreshold: 5,
+          touchSensitivity: 5,
+          keyboardScrolling: false,
+          sectionSelector: ".section",
+          animateAnchor: false,
+
+          //events
+          onLeave: function (index, nextIndex, direction) {},
+          afterLoad: function (anchorLink, index) {},
+          afterRender: function () {},
+        });
+      });
+    </script>
+    <title>Плёс</title>
+  </head>
+  <body ondragstart="return false" id="destinations">
+    <div id="pagepiling">
+      <div class="section contacts">
+        <div class="wrapper">
+          <h2>Плёс</h2>
+          <div class="textblock" id="contacts-area">
+            <p>
+              Плёс — город на севере Ивановской области. Расположен на правом
+              берегу Волги, в устье речки Шохонки. Был основан в XII веке на
+              землях, принадлежавших финно-угорскому племени меря. В 1888-1890
+              гг. в Плёсе жил русский художник И. Левитан. Известна березовая
+              роща Левитана, где он в ней, по преданию, закончил работу над
+              картиной «Березовая роща». Всего с Плёсом связано 200 работ И.
+              Левитана.
+            </p>
+            <p>
+              <img src="images/ples.jpg" alt="Плёс" />
+            </p>
+            <p>
+              Музей, посвященный великому художнику-пейзажисту, является частью
+              Плёсского государственного историко-архитектурного и
+              художественного музея-заповедника. Впервые Исаак Левитан побывал
+              здесь весной 1888 года вместе со своими друзьями – художниками
+              Кувшинниковой и Степановым. Музей включает два экспозиционных
+              зала. Первый посвящен творческой биографии художника, а во втором
+              размещены его подлинные работы.
+            </p>
+            <p>
+              <img src="images/museum-ples.jpg" alt="Музей" />
+            </p>
+            <p>
+              Соборную гору не зря называют сердцем города, ведь именно здесь
+              началась история Плеса. В ту эпоху на горе стояла крепость,
+              основанная в XV веке князем Василием I, но до наших дней, увы,
+              дошли лишь остатки рвов и оборонительных валов. Тем не менее после
+              многочисленных раскопок археологам удалось воссоздать макет
+              крепости, состоявшей из 3-х различных укреплений. У Соборной горы
+              есть и другое название — Чувиль, что в переводе означает «птичий
+              город».
+            </p>
+            <p>
+              <img src="images/mountain.jpg" alt="Соборная гора" />
+            </p>
+            <p>
+              Ни один экскурсионный маршрут по Плесу не обходится без посещения
+              Калашной улицы — до XVIII века главной городской артерии. После
+              обустройства набережной и города её след затерялся между
+              многочисленных домов, но несколько лет назад, когда туристическая
+              популярность Плеса стала возрастать, историки и энтузиасты
+              принялись за восстановление этой древнейшей улицы.
+            </p>
+            <p>
+              <img src="images/kalash-street.jpg" alt="Калашная улица" />
+            </p>
+            <p><a href="destinations.html">Вернуться назад</a></p>
+          </div>
+        </div>
+        <div class="anchor" onclick="location.href='nav.html';">
+          <img src="images/compass.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

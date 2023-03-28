@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.pagepiling.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: null,
+          direction: "vertical",
+          verticalCentered: true,
+          anchors: [],
+          scrollingSpeed: 700,
+          easing: "swing",
+          loopBottom: false,
+          loopTop: false,
+          css3: true,
+          normalScrollElements: null,
+          normalScrollElementTouchThreshold: 5,
+          touchSensitivity: 5,
+          keyboardScrolling: false,
+          sectionSelector: ".section",
+          animateAnchor: false,
+
+          //events
+          onLeave: function (index, nextIndex, direction) {},
+          afterLoad: function (anchorLink, index) {},
+          afterRender: function () {},
+        });
+      });
+    </script>
+    <title>Боголюбово</title>
+  </head>
+  <body ondragstart="return false" id="destinations">
+    <div id="pagepiling">
+      <div class="section contacts">
+        <div class="wrapper">
+          <h2>Боголюбово</h2>
+          <div class="textblock" id="contacts-area">
+            <p>
+              С виду непримечательный посёлок хранит в себе много памятников
+              духовного наследия и радует глаз невероятно красивыми пейзажами.
+              Сюда приезжают для того чтобы зарядиться положительными эмоциями и
+              узнать много интересного о том, как жили наши предки. Провинция
+              Суздальского района, расположенная на побережье Клязьмы, восхищает
+              туристов особенной атмосферой. Когда-то село являлось резиденцией
+              Андрея Боголюбского. Через некоторое время на территории появился
+              монастырь.
+            </p>
+            <p>
+              <img src="images/bogolyubovo.jpg" alt="Боголюбово" />
+            </p>
+            <p>
+              Известно, что Андрей Боголюбский пытался сделать из Владимира
+              новую столицу Руси, поэтому к строительству своей резиденции
+              (Боголюбскому замку), которая должна была стать его "лицом" он
+              относился достаточно серьезно и не скупился на средства,
+              выделяемые для ее возведения. Строительство замка, представляющего
+              собой дворцовый ансамбль, выполненный в едином стиле,
+              осуществлялось в период времени между 1158 и 1165 гг.
+            </p>
+            <p>
+              <img src="images/bogolyubovo-palace.jpg" alt="Дворец" />
+            </p>
+            <p>
+              Был построен князем Андреем Боголюбским в 1158—11б4 годах как
+              замок. Внутри каменных стен воздвигли белокаменный собор во имя
+              Рождества Богородицы. Храм был украшен резными фресками и
+              рельефами, позолотой и медью, а также оконными витражами. После
+              смерти князя в Боголюбово расположился мужской монастырь. Древний
+              собор, разрушившийся от ветхости и неумелых переделок, в XVIII
+              столетии заменили новым.
+            </p>
+            <p>
+              <img src="images/bogolyubovo-monastery.jpg" alt="Монастырь" />
+            </p>
+            <p><a href="destinations.html">Вернуться назад</a></p>
+          </div>
+        </div>
+        <div class="anchor" onclick="location.href='nav.html';">
+          <img src="images/compass.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

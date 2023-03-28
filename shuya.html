@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.pagepiling.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: null,
+          direction: "vertical",
+          verticalCentered: true,
+          anchors: [],
+          scrollingSpeed: 700,
+          easing: "swing",
+          loopBottom: false,
+          loopTop: false,
+          css3: true,
+          normalScrollElements: null,
+          normalScrollElementTouchThreshold: 5,
+          touchSensitivity: 5,
+          keyboardScrolling: false,
+          sectionSelector: ".section",
+          animateAnchor: false,
+
+          //events
+          onLeave: function (index, nextIndex, direction) {},
+          afterLoad: function (anchorLink, index) {},
+          afterRender: function () {},
+        });
+      });
+    </script>
+    <title>Шуя</title>
+  </head>
+  <body ondragstart="return false" id="destinations">
+    <div id="pagepiling">
+      <div class="section contacts">
+        <div class="wrapper">
+          <h2>Шуя</h2>
+          <div class="textblock" id="contacts-area">
+            <p>
+              Город знаменит своей ткацкой промышленностью и знаменитыми на весь
+              мир шуйскими ситцами. Развитию промышленности и торговли в Шуе
+              способствовало удобное положение города на судоходной реке Тезе. В
+              Шуе имеется большой Гостиный двор. Торговать в Шую приезжали
+              иногородние и иностранные купцы — в 1654 году в гостином дворе
+              была лавка английско-архангельской торговой компании. В это же
+              время Шуя прославилась и своими торговыми ткацкими ярмарками.
+            </p>
+            <p>
+              <img src="images/shuya.jpg" alt="Шуя" />
+            </p>
+            <p>
+              Здание расположено на площади Ленина (бывшей Спасской) и входит в
+              состав богатой усадьбы, принадлежавшей семье богатых купцов
+              Посылиных – владельцев миткалевой и двух ситценабивных фабрик.
+              Наряду с другими она формирует северную линию застройки площади.
+              Постройки датируются рубежом XVIII-XIX веков. В 1837 году, во
+              время своего пребывания в Шуе, дом посетили будущий царь Александр
+              II и сопровождавший его русский поэт В.А. Жуковский.
+            </p>
+            <p>
+              <img src="images/posylins.jpg" alt="Усадьба" />
+            </p>
+            <p>
+              Шуйская важня, построенная в 1820-м году, – единственная во всей
+              центральной России. Хотя в прежние времена возовые весы были
+              непременным атрибутом каждой крупной рыночной площади, до наших
+              сохранился только один павильон. Весы были сердцем города как в
+              переносном, так и в буквальном смысле – от них начинался отсчет
+              всех дорог. Поэтому на флагштоке павильона, как на верстовом
+              столбе, чередуются черные и белые полоски.
+            </p>
+            <p>
+              <img src="images/scales.jpg" alt="Соборная гора" />
+            </p>
+            <p><a href="destinations.html">Вернуться назад</a></p>
+          </div>
+        </div>
+        <div class="anchor" onclick="location.href='nav.html';">
+          <img src="images/compass.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

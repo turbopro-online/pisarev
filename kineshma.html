@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.pagepiling.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: null,
+          direction: "vertical",
+          verticalCentered: true,
+          anchors: [],
+          scrollingSpeed: 700,
+          easing: "swing",
+          loopBottom: false,
+          loopTop: false,
+          css3: true,
+          normalScrollElements: null,
+          normalScrollElementTouchThreshold: 5,
+          touchSensitivity: 5,
+          keyboardScrolling: false,
+          sectionSelector: ".section",
+          animateAnchor: false,
+
+          //events
+          onLeave: function (index, nextIndex, direction) {},
+          afterLoad: function (anchorLink, index) {},
+          afterRender: function () {},
+        });
+      });
+    </script>
+    <title>Кинешма</title>
+  </head>
+  <body ondragstart="return false" id="destinations">
+    <div id="pagepiling">
+      <div class="section contacts">
+        <div class="wrapper">
+          <h2>Кинешма</h2>
+          <div class="textblock" id="contacts-area">
+            <p>
+              Кинешма была одним из богатейших купеческих волжских городов
+              дореволюционной России. Здесь работали несколько текстильных
+              фабрик и крупных заводов, на ярмарках велась торговля. Именно в
+              Кинешме появился первый в России кинотеатр. На рубеже XIX – XX
+              веков город считался одним из самых благоустроенных на Волге, его
+              набережные украшали речные кафе, уличное освещение – по последнему
+              слову техники, модные усадьбы и зеленые бульвары.
+            </p>
+            <p>
+              <img src="images/kineshma.jpg" alt="Кинешма" />
+            </p>
+            <p>
+              Начнем с прогулки по берегу великой русской реки. Волжский бульвар
+              — визитная карточка Кинешмы. Горожане и туристы с давних пор
+              приходили сюда отдыхать от дневных забот, прогуливаться в тени
+              аллей (вековые деревья сохранились до сих пор) и наслаждаться
+              прекрасными видами с высокого берега. В XIX веке по этой
+              набережной гуляли прототипы героев пьес Островского — как,
+              впрочем, и сам драматург.
+            </p>
+            <p>
+              <img src="images/kineshma-boulevard.jpg" alt="Бульвар" />
+            </p>
+            <p>
+              Кафедральный собор Кинешемской епархии. Комплекс состоит из двух
+              каменных храмов – летнего Успенского (построен в 1745 году) и
+              зимнего Троицкого (1838) – и пятиярусной колокольни-звонницы,
+              возвышающейся над рекой, Волжским бульваром и центром города.
+              Лучший вид на собор открывается с воды.
+            </p>
+            <p>
+              <img src="images/kineshma-church.jpg" alt="Собор" />
+            </p>
+            <p><a href="destinations.html">Вернуться назад</a></p>
+          </div>
+        </div>
+        <div class="anchor" onclick="location.href='nav.html';">
+          <img src="images/compass.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

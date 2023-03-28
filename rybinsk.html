@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.pagepiling.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: null,
+          direction: "vertical",
+          verticalCentered: true,
+          anchors: [],
+          scrollingSpeed: 700,
+          easing: "swing",
+          loopBottom: false,
+          loopTop: false,
+          css3: true,
+          normalScrollElements: null,
+          normalScrollElementTouchThreshold: 5,
+          touchSensitivity: 5,
+          keyboardScrolling: false,
+          sectionSelector: ".section",
+          animateAnchor: false,
+
+          //events
+          onLeave: function (index, nextIndex, direction) {},
+          afterLoad: function (anchorLink, index) {},
+          afterRender: function () {},
+        });
+      });
+    </script>
+    <title>Рыбинск</title>
+  </head>
+  <body ondragstart="return false" id="destinations">
+    <div id="pagepiling">
+      <div class="section contacts">
+        <div class="wrapper">
+          <h2>Рыбинск</h2>
+          <div class="textblock" id="contacts-area">
+            <p>
+              Рыбинск — город в Ярославской области с населением чуть более 200
+              тысяч человек, расположенный на слиянии рек Волги, Черемухи и
+              Шексны. Город разместился в самой северной точке реки Волги.
+              Рыбинск состоит из нескольких микрорайонов, которые часто называют
+              поселками. Для туристов интерес представляют пешие экскурсии по
+              историческому центру города с постройками XVIII – начала XX века.
+            </p>
+            <p><img src="images/rybinsk.jpg" alt="Рыбинск" /></p>
+            <p>
+              Главная достопримечательность города — в первую очередь его улицы
+              со старинными домами, городская площадь. После масштабной
+              реставрации в честь 950 летия города значительно преобразились
+              главные улицы, площадь и набережная. С каждым годом увеличивается
+              количество туристов, приезжающих в город, чтобы пешком осмотреть
+              лучшие виды города, сделать памятные фотографии. Интересная
+              особенность площади и города в целом — большинство вывесок сделаны
+              в старом стиле.
+            </p>
+            <p>
+              <img src="images/rybinsk-square.jpg" alt="Площадь Рыбинска" />
+            </p>
+            <p>
+              Рыбинская городская набережная привлекает своим уютом, природной
+              красотой и очарованием. Оказавшись здесь, словно бы переносишься
+              на полтора столетия назад, в прошлое. Кажется, здесь за 150 лет
+              ничего не изменилось. Также размеренно течет Волга-матушка, также
+              возвышается глава Спасо-Преображенского собора.
+            </p>
+            <p>
+              <img src="images/coastline.jpg" alt="Набережная Рыбинска" />
+            </p>
+            <p>
+              Никольская часовня — своего рода прижизненный памятник Александру
+              II. Поводом для её строительства стало спасение царя во время
+              неудачного покушения в Летнем саду Петербурга. В память об этом
+              чуде часовню освятили в честь святого Николая Чудотворца. Церковь
+              чествует его 4 апреля, и в этот же день совершена попытка убийства
+              императора.
+            </p>
+            <p>
+              <img src="images/rybinsk-church.jpg" alt="Никольская часовня" />
+            </p>
+            <p><a href="destinations.html">Вернуться назад</a></p>
+          </div>
+        </div>
+        <div class="anchor" onclick="location.href='nav.html';">
+          <img src="images/compass.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

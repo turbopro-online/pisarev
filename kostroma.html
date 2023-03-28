@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.pagepiling.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: null,
+          direction: "vertical",
+          verticalCentered: true,
+          anchors: [],
+          scrollingSpeed: 700,
+          easing: "swing",
+          loopBottom: false,
+          loopTop: false,
+          css3: true,
+          normalScrollElements: null,
+          normalScrollElementTouchThreshold: 5,
+          touchSensitivity: 5,
+          keyboardScrolling: false,
+          sectionSelector: ".section",
+          animateAnchor: false,
+
+          //events
+          onLeave: function (index, nextIndex, direction) {},
+          afterLoad: function (anchorLink, index) {},
+          afterRender: function () {},
+        });
+      });
+    </script>
+    <title>Кострома</title>
+  </head>
+  <body ondragstart="return false" id="destinations">
+    <div id="pagepiling">
+      <div class="section contacts">
+        <div class="wrapper">
+          <h2>Кострома</h2>
+          <div class="textblock" id="contacts-area">
+            <p>
+              Удивительный город, где сказка переплетается с былью, а история с
+              современностью. «Пряничный» городок с многовековой историей.
+              Родина династий Годуновых и Романовых. Родина Снегурочки. Место
+              жительства Александра Островского. Признанная золотая столица
+              России: в городе производится 30% всех ювелирных изделий,
+              создающихся в нашей стране. Важная составляющая Золотого кольца
+              России, Кострома — одна из самых посещаемых точек на карте
+              Российской Федерации.
+            </p>
+            <p>
+              <img src="images/kostroma.jpg" alt="Кострома" />
+            </p>
+            <p>
+              История театра восходит к началу XIX века, когда в старинном
+              купеческом городе один за другим стали появляться любительские
+              крепостные труппы, а к сезону 1808–1809 годов одна из них стала
+              регулярно функционировать. Правда интерес к театру у города
+              несколько снизился к середине XIX века, однако частые столичные
+              гастролеры все-таки всколыхнули в горожанах потребность в своем
+              собственном театре, и уже в 1963 году на пожертвования костромских
+              театралов на Павловской улице было возведено здание театра,
+              которое, к слову, и сохранилось до наших дней. Примерно в этот
+              период в афише театра начинают появляться пьесы Островского.
+            </p>
+            <p>
+              <img src="images/theatre-kostroma.jpg" alt="Театр" />
+            </p>
+            <p>
+              Знания о любом крае будут неполными, если не познакомиться с его
+              природой. Для жителей и гостей города такую возможность
+              предоставляет Музей природы Костромской области. Отдел природы
+              известен костромичам и гостям города с 1958 года. В стенах
+              Ипатьевского монастыря располагались зрелищные диорамы, созданные
+              лучшим таксидермистом Костромской области В.А. Тяком, и уникальная
+              коллекция насекомых И.М. Рубинского.
+            </p>
+            <p>
+              <img
+                src="images/nature-museum-kostroma.jpg"
+                alt="Музей природы"
+              />
+            </p>
+            <p>
+              Сегодня Костромской государственный историко-архитектурный и
+              художественный музей-заповедник является одним из крупнейших
+              музейных комплексов в Центральном федеральном округе. В состав
+              музея входят пять зданий (памятников архитектуры), расположенных в
+              исторической части Костромы. Собрание музея-заповедника
+              насчитывает более 600 тысяч единиц.
+            </p>
+            <p><img src="images/art-museum-kostroma.jpg" alt="Музей" /></p>
+            <p><a href="destinations.html">Вернуться назад</a></p>
+          </div>
+        </div>
+        <div class="anchor" onclick="location.href='nav.html';">
+          <img src="images/compass.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

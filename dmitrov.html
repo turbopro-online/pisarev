@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.pagepiling.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: null,
+          direction: "vertical",
+          verticalCentered: true,
+          anchors: [],
+          scrollingSpeed: 700,
+          easing: "swing",
+          loopBottom: false,
+          loopTop: false,
+          css3: true,
+          normalScrollElements: null,
+          normalScrollElementTouchThreshold: 5,
+          touchSensitivity: 5,
+          keyboardScrolling: false,
+          sectionSelector: ".section",
+          animateAnchor: false,
+
+          //events
+          onLeave: function (index, nextIndex, direction) {},
+          afterLoad: function (anchorLink, index) {},
+          afterRender: function () {},
+        });
+      });
+    </script>
+    <title>Дмитров</title>
+  </head>
+  <body ondragstart="return false" id="destinations">
+    <div id="pagepiling">
+      <div class="section contacts">
+        <div class="wrapper">
+          <h2>Дмитров</h2>
+          <div class="textblock" id="contacts-area">
+            <p>
+              Дмитров – город, начавший свое существование с небольшой и поныне
+              частично сохранившейся крепости, заложенной Юрием Долгоруким в 12
+              в. С тех пор пережил немало исторических событий, включая победную
+              страницу истории об операции «Тайфун», остановившую немцев на
+              подходе к Москве. Впрочем, сейчас городок знаменит, прежде всего,
+              многочисленными горнолыжными базами, разбросанными в его
+              окрестностях.
+            </p>
+            <p>
+              <img src="images/dmitrov.jpg" alt="Дмитров" />
+            </p>
+            <p>
+              Дмитровский кремль — главная достопримечательность города
+              Дмитрова, имеющая славу одного из самых древних и любопытнейших
+              памятников оборонной архитектуры этой исторической территории.
+              Основанный как порубежная крепость ростово-суздальским князем
+              Юрием Долгоруким в 1154 году, кремль веками служил северо-западным
+              форпостом изначально Ростово-Суздальской земли, позже –
+              Переяславского княжества и, в конце концов, – всей Московской
+              Руси.
+            </p>
+            <p>
+              <img src="images/kremlin-dmitrov.jpg" alt="Дмитровский Кремль" />
+            </p>
+            <p>
+              Усадьба Толчёновых оформилась в период 1770-1780-х годов, когда
+              принадлежала А.И. и И.А. Толчёновым – крупным хлеботорговцам. Так
+              в 1785-1788 года на средства И.А. Толченова возводится главный
+              усадебный дом – кирпичный, отделанный белокаменным и лепным
+              декором, с претензией на столичный стиль. Очень вероятно, что
+              автором проекта был Н.П. Осипов – деловой партнёр И.А. Толченова.
+            </p>
+            <p>
+              <img src="images/tolchenovs.jpg" alt="Усадьба Толчёновых" />
+            </p>
+            <p>
+              В 1967 году по решению Главы Дмитровского района Валерия Гаврилова
+              театральный коллектив был учрежден как Муниципальный драматический
+              театр «Большое гнездо». Свое имя театр связал с историей родного
+              края. В 1154 году ростово-суздальский князь Юрий Долгорукий назвал
+              город в честь родившегося сына Дмитрия, вошедшего в историю Руси
+              под именем Всеволод «Большое гнездо».
+            </p>
+            <p>
+              <img src="images/theatre-dmitrov.jpg" alt="Драматический театр" />
+            </p>
+            <p><a href="destinations.html">Вернуться назад</a></p>
+          </div>
+        </div>
+        <div class="anchor" onclick="location.href='nav.html';">
+          <img src="images/compass.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

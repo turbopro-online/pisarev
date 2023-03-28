@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.pagepiling.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: null,
+          direction: "vertical",
+          verticalCentered: true,
+          anchors: [],
+          scrollingSpeed: 700,
+          easing: "swing",
+          loopBottom: false,
+          loopTop: false,
+          css3: true,
+          normalScrollElements: null,
+          normalScrollElementTouchThreshold: 5,
+          touchSensitivity: 5,
+          keyboardScrolling: false,
+          sectionSelector: ".section",
+          animateAnchor: false,
+
+          //events
+          onLeave: function (index, nextIndex, direction) {},
+          afterLoad: function (anchorLink, index) {},
+          afterRender: function () {},
+        });
+      });
+    </script>
+    <title>Навигация</title>
+  </head>
+  <body id="nav" ondragstart="return false">
+    <div id="pagepiling">
+      <div class="section nav">
+        <div class="wrapper">
+          <h2>Навигация по сайту</h2>
+          <div class="textblock-narrow">
+            <a class="btn" href="index.html"><p>Главная</p></a>
+            <a class="btn" href="destinations.html"><p>Точки маршрута</p></a>
+            <a class="btn" href="map.html"><p>Карта</p></a>
+            <a class="btn" href="#"><p>Таблица</p></a>
+            <a class="btn" href="contacts.html"><p>Контакты</p></a>
+            <a class="btn" href="about.html"><p>О сайте</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

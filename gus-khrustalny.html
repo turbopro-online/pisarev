@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.pagepiling.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: null,
+          direction: "vertical",
+          verticalCentered: true,
+          anchors: [],
+          scrollingSpeed: 700,
+          easing: "swing",
+          loopBottom: false,
+          loopTop: false,
+          css3: true,
+          normalScrollElements: null,
+          normalScrollElementTouchThreshold: 5,
+          touchSensitivity: 5,
+          keyboardScrolling: false,
+          sectionSelector: ".section",
+          animateAnchor: false,
+
+          //events
+          onLeave: function (index, nextIndex, direction) {},
+          afterLoad: function (anchorLink, index) {},
+          afterRender: function () {},
+        });
+      });
+    </script>
+    <title>Гусь-Хрустальный</title>
+  </head>
+  <body ondragstart="return false" id="destinations">
+    <div id="pagepiling">
+      <div class="section contacts">
+        <div class="wrapper">
+          <h2>Гусь-Хрустальный</h2>
+          <div class="textblock" id="contacts-area">
+            <p>
+              Гусь-Хрустальный – небольшой провинциальный город. Это один из
+              многочисленных моногородов России. Градообразующим предприятием
+              стал Гусевский хрустальный завод, построенный еще в XIX веке и
+              принадлежавший предпринимателям Мальцовым. Здесь можно не только
+              осмотреть достопримечательности, посетить музеи, но и отлично
+              провести время на природе – населенный пункт располагается в
+              живописном Мещёрском крае.
+            </p>
+            <p>
+              <img src="images/gus-khrustalny.jpg" alt="Гусь-Хрустальный" />
+            </p>
+            <p>
+              Любителей отдыха на природе в Гусь-Хрустальном порадуют два
+              больших парковых комплекса. Один из них – Национальный парк
+              «Мещера», занимающий огромную территорию в 119 тысяч га и
+              являющийся, по сути, заповедником. Парк раскинулся на территории
+              трех областей: Владимирской, Рязанской и Московской. В парковой
+              зоне растут, в основном, хвойные деревья, что способствует
+              чистейшему воздуху, насыщенному фитонцидами.
+            </p>
+            <p>
+              <img src="images/gus-park.jpg" alt="Парк" />
+            </p>
+            <p>
+              Храм-часовня святой Великомученицы Варвары и святой источник
+              расположен на окраине города Гусь-Хрустальный. С юга, в притворе
+              часовни находится колодезь со святой водой, а рядом камень от
+              стопы Святой Варвары, основной вход в храм с северной стороны.
+              Храм часовня стоит в низине неподалёку от речки Варварки, которая
+              выше по течению забрана в бетонную трубу коллектора, но далее
+              выходит на поверхность, образуя проточное озерко перед самой
+              часовней
+            </p>
+            <p>
+              <img src="images/gus-church.jpg" alt="Часовня" />
+            </p>
+            <p><a href="destinations.html">Вернуться назад</a></p>
+          </div>
+        </div>
+        <div class="anchor" onclick="location.href='nav.html';">
+          <img src="images/compass.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,726 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+html {
+  opacity: 0;
+  animation: ani 1.5s forwards;
+}
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*================================Адаптивка================================*/
+
+/* Max-width 792px*/
+@media (max-width: 792px) {
+  h2 {
+    /* Расчёт по формуле */
+    font-size: calc(3rem + 10 * (100vw - 792px) / 400);
+    padding-bottom: 2%;
+  }
+  p {
+    font-size: calc(1rem + 5 * (100vw) / 800);
+    font-family: Hauss;
+    padding-bottom: 1%;
+  }
+  ul {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  ul li {
+    font-size: calc(1rem + 5 * (100vw) / 800);
+    text-align: left;
+    font-family: Hauss;
+    color: rgb(255, 204, 0);
+    padding-bottom: 2%;
+  }
+  #navlink {
+    font-family: Hauss;
+    font-size: calc(2rem + 5 * (100vw) / 600);
+    font-weight: bolder;
+    color: rgb(170, 136, 0);
+    overflow: hidden;
+  }
+  #navlink a {
+    text-decoration: none;
+    color: rgb(170, 136, 0);
+  }
+  #navlink a:visited {
+    color: rgba(255, 204, 0, 0.6);
+  }
+  #table table {
+    font-family: Hauss;
+    font-size: 0.5rem;
+    margin: auto auto;
+  }
+  #table td {
+    padding: 2px;
+    border: 2px solid rgb(170, 136, 0);
+  }
+  #table tr {
+    padding: 2px;
+  }
+  .btn {
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0 0;
+    margin: 0 0 15px 0;
+  }
+  .textblock {
+    display: grid;
+    margin-top: 2.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 18px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+  }
+  .textblock-wide {
+    display: grid;
+    margin-top: 2.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+  }
+  .textblock-narrow {
+    display: grid;
+    margin-top: 2.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: justify;
+  }
+  .textblock-table {
+    display: grid;
+    margin-top: 2.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .card img {
+    display: none;
+  }
+}
+/* Меню пропадает при малой ширине окна*/
+@media (max-width: 950px) {
+  #pp-nav.right {
+    display: none;
+  }
+}
+/* Max-width 1920px как ширина окна и Min-width 792px при которой появляется прокрутка по горизонтали */
+@media (max-width: 1920px) and (min-width: 793px) {
+  h2 {
+    /* Расчёт по формуле */
+    font-size: calc(3rem + 10 * (100vw - 792px) / 400);
+    white-space: nowrap;
+    padding-bottom: 2%;
+  }
+  p {
+    /* Расчёт по формуле */
+    font-size: calc(1.25rem + 5 * (100vw - 792px) / 600);
+    font-family: Hauss;
+    padding-bottom: 1%;
+  }
+  ul {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  ul li {
+    font-size: calc(1.25rem + 5 * (100vw - 792px) / 600);
+    text-align: justify;
+    font-family: Hauss;
+    color: rgb(255, 204, 0);
+    padding-bottom: 2%;
+  }
+  #navlink {
+    font-family: Hauss;
+    font-size: calc(2rem + 5 * (100vw - 792px) / 600);
+    font-weight: bolder;
+    color: rgb(170, 136, 0);
+    overflow: hidden;
+  }
+  #navlink a:visited {
+    color: rgba(255, 204, 0, 0.6);
+  }
+  #table {
+    font-family: Hauss;
+    margin-bottom: 20px;
+    max-width: 70%;
+    border: 2px solid rgb(170, 136, 0);
+    overflow: hidden;
+  }
+  #table td {
+    padding: 5px;
+    border: 2px solid rgb(170, 136, 0);
+  }
+  #table tr {
+    padding: 5px;
+  }
+  .btn {
+    height: 10rem;
+    line-height: 10rem;
+    padding: 0 25px;
+    margin: 0 15px 15px 0;
+  }
+  .textblock {
+    display: grid;
+    margin-top: 2.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: left;
+  }
+  .textblock-wide {
+    display: grid;
+    margin-top: 2.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+  }
+  .textblock-narrow {
+    display: grid;
+    margin-top: 2.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: justify;
+  }
+  .textblock-table {
+    display: grid;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+}
+/* Для больших экранов (ТВ, доска для презентаций) */
+@media (min-width: 1921px) {
+  h2 {
+    font-size: 6rem;
+    padding-bottom: 2%;
+  }
+  p {
+    font-size: 4rem;
+    font-family: Hauss;
+    padding-bottom: 1%;
+  }
+  ul {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
+  ul li {
+    font-size: 4rem;
+    text-align: justify;
+    font-family: Hauss;
+    color: rgb(255, 204, 0);
+    padding-bottom: 2.5%;
+  }
+  #navlink {
+    font-family: Hauss;
+    font-size: 5rem;
+    font-weight: bolder;
+    color: rgb(170, 136, 0);
+    overflow: hidden;
+  }
+  #navlink a:visited {
+    color: rgba(255, 204, 0, 0.6);
+  }
+  #table {
+    font-size: 1.5rem;
+    font-family: Hauss;
+    margin-bottom: 20px;
+    margin: auto auto;
+    max-width: 75%;
+  }
+  #table td {
+    padding: 5px;
+    border: 2px solid rgb(170, 136, 0);
+  }
+  #table tr {
+    padding: 5px;
+  }
+  .btn {
+    height: 10rem;
+    line-height: 10rem;
+  }
+  .textblock {
+    display: grid;
+    margin-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: left;
+  }
+  .textblock-wide {
+    display: grid;
+    margin-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+  }
+  .textblock-narrow {
+    display: grid;
+    margin-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: justify;
+  }
+  .textblock-table {
+    display: grid;
+    margin-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+/*=========================================================================*/
+@font-face {
+  font-family: Miroslav;
+  src: url(../fonts/mr_Miroslav.otf);
+}
+@font-face {
+  font-family: Direct_step;
+  src: url(../fonts/Direct_step.ttf);
+}
+@font-face {
+  font-family: Hauss;
+  src: url(../fonts/ALSHauss-Regular.ttf);
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+/*
+ * pagepiling.js 1.5.6
+ *
+ * https://github.com/alvarotrigo/pagePiling.js
+ * @license MIT licensed
+ *
+ * Copyright (C) 2016 alvarotrigo.com - A project by Alvaro Trigo
+ */
+html,
+body {
+  /*Avoid flicker on slides transitions for mobile phones #336 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: none;
+}
+.pp-section {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  /* fixes flickering in safari*/
+  -webkit-backface-visibility: hidden;
+  /* fixes flickering in firefox*/
+  backface-visibility: hidden;
+}
+.pp-easing {
+  -webkit-transition: all 1000ms cubic-bezier(0.55, 0.085, 0, 0.99);
+  -moz-transition: all 1000ms cubic-bezier(0.55, 0.085, 0, 0.99);
+  -o-transition: all 1000ms cubic-bezier(0.55, 0.085, 0, 0.99);
+  transition: all 1000ms cubic-bezier(0.55, 0.085, 0, 0.99);
+  /* custom */
+  -webkit-transition-timing-function: cubic-bezier(0.55, 0.085, 0, 0.99);
+  -moz-transition-timing-function: cubic-bezier(0.55, 0.085, 0, 0.99);
+  -o-transition-timing-function: cubic-bezier(0.55, 0.085, 0, 0.99);
+  transition-timing-function: cubic-bezier(0.55, 0.085, 0, 0.99);
+  /* custom */
+}
+#pp-nav {
+  position: fixed;
+  z-index: 100;
+  margin-top: -32px;
+  top: 50%;
+  opacity: 1;
+}
+#pp-nav.right {
+  right: 17px;
+}
+#pp-nav.left {
+  left: 17px;
+}
+.pp-section.pp-table {
+  display: table;
+}
+.pp-tableCell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+.pp-slidesNav {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  opacity: 1;
+}
+.pp-slidesNav.bottom {
+  bottom: 17px;
+}
+.pp-slidesNav.top {
+  top: 17px;
+}
+#pp-nav ul,
+.pp-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+#pp-nav li,
+.pp-slidesNav li {
+  display: block;
+  width: 14px;
+  height: 13px;
+  margin: 7px;
+  position: relative;
+}
+.pp-slidesNav li {
+  display: inline-block;
+}
+#pp-nav li a,
+.pp-slidesNav li a {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+#pp-nav li .active span,
+.pp-slidesNav .active span {
+  background: #333;
+}
+#pp-nav span,
+.pp-slidesNav span {
+  top: 2px;
+  left: 2px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+.pp-tooltip {
+  position: absolute;
+  top: -2px;
+  color: #fff;
+  font-size: 16px;
+  font-family: Hauss;
+  white-space: nowrap;
+  max-width: 220px;
+}
+.pp-tooltip.right {
+  right: 20px;
+}
+.pp-tooltip.left {
+  left: 20px;
+}
+.pp-scrollable {
+  overflow-y: scroll;
+  height: 100%;
+}
+/*==========================================================================*/
+#pagepiling .section {
+  text-align: center;
+}
+#pagepiling .section h2 {
+  font-family: Miroslav;
+  color: #fff;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+#pagepiling .section.sec1 {
+  background: url(../images/section1.jpg);
+  background-size: cover;
+}
+#pagepiling .section.sec2 {
+  background: url(../images/section2.jpg);
+  background-size: cover;
+}
+#pagepiling .section.sec3 {
+  background: url(../images/section3.jpg);
+  background-size: cover;
+}
+#pagepiling .section.sec4 {
+  background: url(../images/section4.jpg);
+  background-size: cover;
+}
+#pagepiling .section.nav {
+  background: url(../images/nav.jpg);
+  background-size: cover;
+}
+#pagepiling .section.map {
+  background: url(../images/map.jpg);
+  background-size: cover;
+}
+#pagepiling .section.about {
+  background: url(../images/about.jpg);
+  background-size: cover;
+}
+#pagepiling .section.contacts {
+  background: url(../images/contacts.jpg);
+  background-size: cover;
+}
+#pagepiling .section.table {
+  background: url(../images/table.jpg);
+  background-size: cover;
+}
+#pagepiling .section.destinations {
+  background: url(../images/destinations.jpg);
+  background-size: cover;
+}
+#pp-nav li .active span,
+.pp-slidesNAv .active span {
+  background: #fff;
+}
+/*==========================================================================*/
+h1::selection,
+h2::selection,
+br::selection,
+img::selection {
+  background: transparent;
+}
+p::selection {
+  background-color: rgba(255, 204, 0, 0.6);
+}
+h1::-moz-selection,
+h2::-moz-selection,
+br::-moz-selection,
+img::-moz-selection {
+  background: transparent;
+}
+p::-moz-selection {
+  background-color: rgba(255, 204, 0, 0.6);
+}
+/*==========================================================================*/
+.wrapper {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1%;
+  height: 75%;
+  overflow-y: scroll;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  -moz-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.wrapper h2 {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+/*==========================================================================*/
+/*=============================ПОЛОСА ПРОКРУТКИ=============================*/
+/*==========================================================================*/
+:root {
+  --scrollbarBgColor: rgba(0, 0, 0, 0.05);
+  --scrollbarThumbColor: rgba(0, 0, 0, 0.15);
+  --scrollbarThumbColorSecond: rgba(255, 255, 255, 0.6);
+  --scrollbarWidth: 16px;
+  --scrollbarBorder: 0 solid var(--scrollbarBgColor);
+  --scrollbarBorderRadius: calc(var(--scrollbarWidth) / 4);
+}
+.wrapper {
+  scrollbar-width: var(--scrollbarWidth);
+  scrollbar-color: var(--scrollbarThumbColor) var(--scrollbarBgColor);
+}
+.wrapper::-webkit-scrollbar {
+  width: var(--scrollbarWidth);
+}
+.wrapper::-webkit-scrollbar-track {
+  background: var(--scrollbarBgColor);
+  border-radius: var(--scrollbarBorderRadius);
+}
+.wrapper::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbarThumbColor);
+  border-radius: var(--scrollbarBorderRadius);
+  border: var(--scrollbarBorder);
+  background-image: linear-gradient(
+    180deg,
+    var(--scrollbarThumbColor) 0%,
+    var(--scrollbarThumbColorSecond) 90%
+  );
+}
+
+/*==========================================================================*/
+/*==========================================================================*/
+/*==========================================================================*/
+
+p:first-letter {
+  font: bolder 110% / 0.5 Miroslav;
+  margin: 2px 0 0 2px;
+  color: rgb(255, 36, 0);
+}
+p a {
+  text-decoration: none;
+  font-weight: medium;
+  border-bottom: 1px solid;
+  color: rgb(170, 136, 0);
+}
+p a:hover {
+  text-decoration: none;
+  color: rgb(255, 204, 0);
+  border-bottom: 1px solid;
+}
+p a:visited {
+  text-decoration: none;
+  color: rgb(105, 105, 105);
+  border-bottom: 1px solid;
+}
+p a::selection {
+  background-color: rgba(255, 204, 0, 0.6);
+}
+ul li span {
+  color: black;
+}
+ul li span::selection {
+  background-color: rgba(255, 204, 0, 0.6);
+}
+img {
+  max-width: 100%;
+  height: auto;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+/*==========================================================================*/
+#nav #pp-nav ul,
+.pp-slidesNav ul {
+  display: none;
+}
+#map #pp-nav ul,
+.pp-slidesNav ul {
+  display: none;
+}
+#about #pp-nav ul,
+.pp-slidesNav ul {
+  display: none;
+}
+#contacts #pp-nav ul,
+.pp-slidesNav ul {
+  display: none;
+}
+#table #pp-nav ul,
+.pp-slidesNav ul {
+  display: none;
+}
+#destinations #pp-nav ul,
+.pp-slidesNav ul {
+  display: none;
+}
+#contacts-area {
+  overflow: hidden;
+}
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid #fff;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  color: rgba(105, 105, 105, 0.75);
+  background-color: #fff;
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  transition: box-shadow 0.2s;
+}
+.btn:focus-visible {
+  outline: none;
+}
+.btn:hover {
+  transition: all 0.2s;
+  color: rgb(255, 204, 0);
+}
+.btn:active {
+  background-color: rgba(105, 105, 105, 0.75);
+}
+.btn:disabled {
+  background-color: #eee;
+  color: rgba(105, 105, 105, 0.75);
+  cursor: not-allowed;
+}
+.anchor {
+  width: 5vw;
+  min-width: 33px;
+  max-width: 50px;
+  position: fixed;
+  margin-left: 2.5vw;
+  margin-top: 2.5vh;
+  cursor: pointer;
+}
+.anchor img {
+  width: 100%;
+}
+/*==========================================================================*/
+.card {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10% 2.5% 5% 2.5%;
+  transition: 0.5s;
+  cursor: pointer;
+  font-weight: 600;
+}
+.card:hover {
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.5) inset;
+  -moz-box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.5) inset;
+}
+.card p {
+  text-align: center;
+}
+.card img {
+  object-fit: cover;
+  height: 17.5vh;
+  width: 17.5vw;
+}
